@@ -14,14 +14,15 @@
         font-family: "Inter", sans-serif
     }
     
-    /* tone down achievement cards shadow */
+    /* tone down achievement cards shadow & other tweaks */
     .achievement-card:hover {
         box-shadow: var(--shadow-floating-small, rgba(0,0,0,0.03)) !important;
         transform: scale(1.05);
         z-index:9999999999;
         background:var(--borderColor-muted) !important;
     }
-    .js-achievement-card-details {margin-bottom:12px !important;}
+    
+    .achievement-card {transform: scale(0.98);}
     
     /* change achievement animations */
     .details-overlay>summary,.achievement-card,.achievement-card:hover {
