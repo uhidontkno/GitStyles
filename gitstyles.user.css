@@ -29,4 +29,15 @@
     transition: 400ms;
     transition-property: all;
     }
+    
+    /* tone down gh enterrprise cards */
+    .color-shadow-extra-large {
+    box-shadow: var(--shadow-floating-legacy, rgba(0,0,0,0.5)) !important;
+    }
+    .pricing-recommended-plan {
+        box-shadow: var(--shadow-floating-legacy, rgba(0,0,0,0.5)) !important;
+    }
+    .pricing-recommended-plan .color-shadow-extra-large {
+        box-shadow: none !important;
+    }
 }
