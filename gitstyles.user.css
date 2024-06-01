@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           GitStyles
+@namespace      github.com/uhidontkno/GitStyles
+@version        1.0.0
+@description    A new userstyle
+@author         rare1k
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+    /* Use a better font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    html,body, .markdown-body {
+        font-family: "Inter",sans-serif
+    }
+}
