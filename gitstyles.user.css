@@ -5,11 +5,27 @@
 @description    A new userstyle
 @author         rare1k
 ==/UserStyle== */
-
 @-moz-document domain("github.com") {
     /* Use a better font */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    html,body, .markdown-body {
-        font-family: "Inter",sans-serif
+    html,
+    body,
+    .markdown-body {
+        font-family: "Inter", sans-serif
+    }
+    
+    /* tone down achievement cards shadow */
+    .achievement-card:hover {
+        box-shadow: var(--shadow-floating-small, rgba(0,0,0,0.03)) !important;
+        transform: scale(1.05);
+        z-index:9999999999;
+        background:var(--borderColor-muted) !important;
+    }
+    .js-achievement-card-details {margin-bottom:12px !important;}
+    
+    /* change achievement animations */
+    .details-overlay>summary,.achievement-card,.achievement-card:hover {
+    transition: 400ms;
+    transition-property: all;
     }
 }
